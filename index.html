@@ -1,37 +1,52 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!DOCTYPE HTML>
+<HTML>
+    <head>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="container">
             <div class="board">
                 <h3>HOME</h3>
+                <input type="text"id="HomeTeam">
                 <div class=" screen">
                     <h1 id="homeSc">0</h1>                    
                 </div>
                 
                 <div class="buts">
-                    <button class="btn"  onclick="addOneHome()">+1</button>
-                    <button class="btn"  onclick="addTwoHome()">+2</button>
-                    <button class="btn"  onclick="addThreeHome()">+3</button>
+                    <button class="btn addOne"  id="1home">+1</button>
+                    <button class="btn addTwo"  id="2home">+2</button>
+                    <button class="btn addThree"  id="3home">+3</button>
                 </div>
             </div>
             
             <div class="board">
                 <h3>GUEST</h3>
-                
+                <input type="text"id="GuestTeam">
                 <div class=" screen">
                     <h1 id="guestSc">0</h1>                    
                 </div>
                 
                 <div class="buts">
-                    <button class="btn"  onclick="addOneGest()">+1</button>
-                    <button class="btn"  onclick="addTwoGuest()">+2</button>
-                    <button class="btn"  onclick="addThreeGuest()">+3</button>
+                    <button class="btn addOne" id="1guest" >+1</button>
+                    <button class="btn addTwo"  id="2guest">+2</button>
+                    <button class="btn addThree"  id="3guest">+3</button>
                 </div>
             </div>
         </div>
-         <button id="newGame" onclick = "newGame()"> New Game </button>
+        
+        <div class="btns">
+         <button id="newGame" class="notScoringbtn"> START GAME </button>
+         <button id="FinishMatch" class="notScoringbtn"> FINISH MATCH </button>
+        </div>
+         <div id="Previous_match">
+            <h1>
+                Previous matches : 
+            </h1>
+            <ol id="MatchList">
+            </ol>
+            <button class="notScoringbtn" id="clear"> Clear List</button>
+         </div>
+         <h1 id="winner"> </h1>
         <script src="index.js"></script>
     </body>
-</html>
+</HTML>

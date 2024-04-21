@@ -6,15 +6,32 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("./backet.svg");
-    background-size: cover;
+   /* background-image: url("./backet.svg");
+    background-size: cover ;*/
+    background-color: #080001;
+
     
+}
+
+input{
+ margin-bottom: 20px;
+ padding: 35px 2px;
+ text-align: center;
+ height: 40px;
+font-size: 36pt;
+width: 200px;
+ color: whitesmoke;
+ background: none;
+ border: none;
+ border-bottom: solid 5px #9AABD8;
+}
+
+li{
+    margin-bottom: 10px;
 }
 
 .container {
@@ -22,6 +39,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-weight: bold;
+    font-size: 40px;
+    background-image: url(./backet.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
  
 }
 
@@ -30,11 +52,12 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .screen{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: CursedTimerUlil-Aznm; /* This external font seems to be an anomaly*/
+    font-family: CursedTimerUlil-Aznm; 
     width: 155px;
     height: 120px;
     background: #080001;
@@ -42,6 +65,7 @@ body {
     font-size: 50px;
     border-radius: 5px;
 }
+
 .buts{
     margin: 26px;
 }
@@ -58,7 +82,7 @@ body {
    border-radius: 5px;
 }
 
-#newGame{
+.notScoringbtn{
     margin:  20px auto;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 40px;
@@ -70,11 +94,37 @@ body {
    border: solid;
    border-radius: 50px;
 }
+
 .btn:hover{
     color: white;
     scale: 120%;
 }
-#newGame:hover{
+
+.notScoringbtn:hover{
     color: white;
     scale: 120%;
+    background-color: #9AABD8;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Previous_match{
+    margin-left: 50px;
+}
+
+#winner{
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.WinnerOutcome{
+    font-size: 30px;
+    color: cadetblue;
 }
